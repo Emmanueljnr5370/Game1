@@ -1,0 +1,22 @@
+Them one at a time. Linting can point out multiple
+errors at once, and it does so directly in the editor, so you can see the line
+on which they occur.
+IDLE, the IDE that comes with Python, doesn’t have a linter or the
+capability of having one installed.
+How to Ask for Programming Help
+When internet searches and linters fail to solve your problem, you can
+ask for programming help on the internet. But there is an etiquette to
+efficiently asking for advice. If experienced software developers are willing
+to answer your questions at no charge, it’s best to make efficient use
+of their time.
+Asking strangers for programming help should always be a last resort.
+Hours or days could pass before someone replies to your posted question,
+if you get a reply at all. It’s much faster to search the web for other people
+who have already asked your question and read their answers. Online documentation
+and search engines were made to relieve the question-answering
+work that wo
+
+
+adding new text to my file....
+adding a new text to my file...
+adding a new text to my file2...

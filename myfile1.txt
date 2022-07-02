@@ -1,0 +1,35 @@
+Adding a new text to my file1
+Adding a new text to my file2
+Adding a new text to my file1
+Adding a new text to my file2
+
+
+
+
+
+
+res = requests.get('https://inventwithpython.com/page_that_does_not_exist')
+>>> res.raise_for_status()
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+File "C:\Users\Al\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\models
+.py", line 940, in raise_for_status
+raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://inventwithpython
+.com/page_that_does_not_exist.html
+The raise_for_status() method is a good way to ensure that a program halts if a bad download occurs.
+This is a good thing: You want your program to stop as soon as some unexpected error happens. If a failed
+download isn’t a deal breaker for your program, you can wrap the raise_for_status() line with try and except
+statements to handle this error case without crashing.
+import requests
+res = requests.get('https://inventwithpython.com/page_that_does_not_exist')
+try:
+res.raise_for_status()
+except Exception as exc:
+print('There was a problem: %s' % (exc))
+This raise_for_status() method call causes the program to output the following:
+There was a problem: 404 Client Error: Not Found for url: https://
+inventwithpython.com/page_that_does_not_exist.html
+Always call raise_for_status() after calling requests.get(). You want to be sure that the download has
+actually worked before your program continues.
+Saving Downloaded Files to the Hard Drive
